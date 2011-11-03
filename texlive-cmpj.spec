@@ -1,3 +1,9 @@
+# revision 23860
+# category Package
+# catalog-ctan /macros/latex/contrib/cmpj
+# catalog-date 2011-09-05 20:54:58 +0200
+# catalog-license lppl
+# catalog-version 1.17
 Name:		texlive-cmpj
 Version:	1.17
 Release:	1
@@ -48,6 +54,7 @@ Physics of the National Academy of Sciences of Ukraine.
 %doc %{_texmfdistdir}/doc/latex/cmpj/icmphome.pdf
 %doc %{_texmfdistdir}/doc/latex/cmpj/template.pdf
 %doc %{_texmfdistdir}/doc/latex/cmpj/template.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ Physics of the National Academy of Sciences of Ukraine.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
