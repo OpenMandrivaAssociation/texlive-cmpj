@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package contains macros and some documentation for
@@ -26,20 +24,12 @@ typesetting papers for submission to the Condensed Matter
 Physics journal published by the Institute for Condensed Matter
 Physics of the National Academy of Sciences of Ukraine.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -55,7 +45,6 @@ Physics of the National Academy of Sciences of Ukraine.
 %doc %{_texmfdistdir}/doc/latex/cmpj/icmphome.pdf
 %doc %{_texmfdistdir}/doc/latex/cmpj/template.pdf
 %doc %{_texmfdistdir}/doc/latex/cmpj/template.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,5 +55,3 @@ Physics of the National Academy of Sciences of Ukraine.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
