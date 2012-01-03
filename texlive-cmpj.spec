@@ -6,7 +6,7 @@
 # catalog-version 1.17
 Name:		texlive-cmpj
 Version:	1.17
-Release:	1
+Release:	2
 Summary:	Style for the journal Condensed Matter Physics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmpj
