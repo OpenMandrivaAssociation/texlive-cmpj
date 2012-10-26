@@ -1,12 +1,12 @@
-# revision 23860
+# revision 27452
 # category Package
 # catalog-ctan /macros/latex/contrib/cmpj
-# catalog-date 2011-09-05 20:54:58 +0200
+# catalog-date 2012-08-18 12:03:04 +0200
 # catalog-license lppl
-# catalog-version 1.17
+# catalog-version 2.01
 Name:		texlive-cmpj
-Version:	1.17
-Release:	2
+Version:	2.01
+Release:	1
 Summary:	Style for the journal Condensed Matter Physics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmpj
@@ -38,6 +38,7 @@ Physics of the National Academy of Sciences of Ukraine.
 %{_texmfdistdir}/tex/latex/cmpj/cmp-logo.eps
 %{_texmfdistdir}/tex/latex/cmpj/cmp-logo.pdf
 %{_texmfdistdir}/tex/latex/cmpj/cmpj.sty
+%{_texmfdistdir}/tex/latex/cmpj/cmpj2.sty
 %doc %{_texmfdistdir}/doc/latex/cmpj/README
 %doc %{_texmfdistdir}/doc/latex/cmpj/eps_demo.eps
 %doc %{_texmfdistdir}/doc/latex/cmpj/eps_demo.pdf
