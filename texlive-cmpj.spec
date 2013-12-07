@@ -6,7 +6,7 @@
 # catalog-version 2.03
 Name:		texlive-cmpj
 Version:	2.03
-Release:	4
+Release:	5
 Summary:	Style for the journal Condensed Matter Physics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmpj
