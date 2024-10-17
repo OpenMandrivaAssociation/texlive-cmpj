@@ -3,7 +3,7 @@ Version:	58506
 Release:	2
 Summary:	Style for the journal Condensed Matter Physics
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/cmpj
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/cmpj
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmpj.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cmpj.doc.r%{version}.tar.xz
